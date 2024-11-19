@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Goal</title>
+</head>
+<body>
+    <h1>Goal Details</h1>
+
+    <% if (goal) { %>
+        <p><strong>ID:</strong> <%= goal.id %></p>
+        <p><strong>Title:</strong> <%= goal.title %></p>
+        <p><strong>Description:</strong> <%= goal.description || "No description provided" %></p>
+        <p><strong>Created At:</strong> <%= goal.created_at %></p>
+    <% } else { %>
+        <p>Goal not found.</p>
+    <% } %>
+
+    <br>
+    <a href="/goal">Back to Goals List</a>
+</body>
+</html>

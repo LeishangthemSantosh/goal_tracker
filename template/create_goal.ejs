@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Goal</title>
+</head>
+<body>
+    <h1>Create a New Goal</h1>
+
+    <!-- Form to create a new goal -->
+    <form action="/goal/create" method="PATCH">
+        <label for="title">Title:</label><br>
+        <input type="text" id="title" name="title" placeholder="Enter goal title" required><br><br>
+
+        <label for="description">Description:</label><br>
+        <textarea id="description" name="description" placeholder="Enter goal description"></textarea><br><br>
+
+        <button type="submit">Create Goal</button>
+    </form>
+
+    <br>
+    <a href="/">Back to Home</a> <!-- Link to go back to the homepage -->
+</body>
+</html>
