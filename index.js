@@ -19,6 +19,6 @@ app.get("/", (req, res) => {
 })
 app.use("/goal", router)
 
-app.listen(80, () => {
+app.listen(80, '0.0.0.0', () => {
     console.log("Server started");
 })
