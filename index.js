@@ -14,8 +14,11 @@ app.use(express.urlencoded({ "extended": true }))
 
 app.use(methodOverride("_method"));
 
+app.get("/", (req, res) => {
+    res.send("Works")
+})
 app.use("/goal", router)
 
-app.listen(3002, () => {
+app.listen(80, () => {
     console.log("Server started");
 })
